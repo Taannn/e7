@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise #7</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: serif, sans-serif;
+    }
+    a {
+      text-decoration: none;
+    }
+    li {
+      list-style: none;
+    }
+    .container {
+      width: 975px;
+      margin: 16px auto;
+    }
+    .header_title {
+      color: #8227be;
+      font-size: 42px;
+      padding-top: 5px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    #searchBar {
+      background: white url(assets/images/search.png) no-repeat right center;
+      padding: 5px;
+      border: 1px solid #dee487;
+    }
+    button {
+      color: white;
+      background-color: #a653d0;
+      border: none;
+      padding: 5px;
+      margin-left: 50px;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+    input:focus {
+      outline: none;
+    }
+    .clear::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    #header {
+      float: left;
+    }
+    #search {
+      float: right;
+      background: linear-gradient(#def1ae, #bbe75d);
+      padding: 16px;
+    }
+    .container--navbar {
+      background: linear-gradient(#a2f38d, #6AD63A);
+      padding: 30px;
+    }
+    .navbar li {
+      float: left;
+    }
+    .navbar li a {
+      text-transform: uppercase;
+      font-size: 20px;
+      padding: 4px 20px;
+      transition: all 0.2s ease;
+    }
+    .sub-main ul li a {
+      transition: font-size 0.2s ease;
+    }
+    .navbar li a:hover {
+      color: #992bb4;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    a:hover {
+      color: #992bb4;
+      font-weight: 600;
+      font-size: 21px;
+    }
+    .border-left-right {
+      border-left: 2px solid #68868a;
+      border-right: 2px solid #68868a;
+    }
+    .home {
+      color: #992bb4;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .container--main {
+      background: linear-gradient(#e2f2b4, #d4ee93,#b8e952);
+    }
+    .main-title {
+      color: #326704;
+      font-size: 38px;
+      font-weight: 400;
+      padding: 65px 30px 0;
+    }
+    .main-description {
+      color: #789f27;
+      font-size: 20px;
+      letter-spacing: 1px;
+      padding: 30px 30px 45px;
+    }
+    .sub-main {
+      border: 2px solid #dfefc4;
+      border-radius: 22px;
+      padding: 25px;
+    }
+    .sub-main--left {
+      float: left;
+      width: 48%;
+      height: 522px;
+    }
+    .sub-main--right {
+      float: right;
+      width: 50%;
+      height: 522px;
+    }
+    .sub-main-title {
+      color: #992bb4;
+      font-size: 25px;
+      padding-bottom: 22px;
+    }
+    .sub-main--left ul li  {
+      list-style-image: url(assets/images/arrow.png);
+      margin-left: 38px;
+    }
+    .sub-main--right ul li  {
+      list-style-image: url(assets/images/check.png);
+      margin-left: 65px;
+    }
+    .sub-main ul li {
+      padding-top: 10px;
+    }
+    .container--footer {
+      background: linear-gradient(#f4f29a, #d7d739);
+      padding: 30px 30px 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- search-bar and title part -->
+  <div class="container clear container--header">
+    <div id="header">
+      <h1 class="header_title">Coding is Fun Anyway!</h1>
+    </div>
+    <div id="search">
+      <form method="get">
+        <input type="text" name="search" id="searchBar">
+        <button type="submit">Search a topic</button>
+      </form>
+    </div>
+  </div>
+  <!-- navbar part -->
+  <div class="container container--navbar clear">
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" class="home">home</a></li>
+        <li><a href="#" class="border-left-right">online tutorials</a></li>
+        <li><a href="#">get a private tutor</a></li>
+        <li><a href="#" class="border-left-right">sign up</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- main message -->
+  <div class="container container--main">
+    <h2 class="main-title">Do you need help with Coding?</h2>
+    <p class="main-description">Our website uses an interactive methodology of teaching web development using the latest web technologies. Your learning experience with us is guaranteed and fun. You will have fun while learning. This is the secret of our outstanding results. Check reviews from our students.</p>
+  </div>
+  <!-- go to part -->
+  <div class="container clear">
+    <div class="sub-main sub-main--left">
+      <h3 class="sub-main-title">Go to:</h3>
+      <ul>
+        <li><a href="#">Year 1 Free Lessons.</a></li>
+        <li><a href="#">Year 2 Free Lessons.</a></li>
+        <li><a href="#">Year 3 Free Lessons.</a></li>
+        <li><a href="#">Year 4 Free Lessons.</a></li>
+        <li><a href="#">Year 5 Free Lessons.</a></li>
+        <li><a href="#">Year 6 Free Lessons.</a></li>
+        <li><a href="#">Year 7 Free Lessons.</a></li>
+        <li><a href="#">Year 8 Free Lessons.</a></li>
+        <li><a href="#">Year 9 Free Lessons.</a></li>
+        <li><a href="#">Year 10 Free Lessons.</a></li>
+        <li><a href="#">Year 11 Free Lessons.</a></li>
+        <li><a href="#">Year 12 Free Lessons.</a></li>
+      </ul>
+    </div>
+    <!-- why us part -->
+    <div class="sub-main sub-main--right">
+      <h3 class="sub-main-title">Why us?</h3>
+        <ul>
+          <li><a href="#">Our teachers are available anytime.</a></li>
+          <li><a href="#">Available on laptop, Tablets and Phones.</a></li>
+          <li><a href="#">30 day Money Back Guarantee.</a></li>
+          <li><a href="#">Interactive games for an enjoyable learning experience.</a></li>
+          <li><a href="#">Learn at your own pace.</a></li>
+          <li><a href="#">Complete curriculum.</a></li>
+        </ul>
+    </div>
+  </div>
+  <!-- footer part -->
+  <div class="container container--footer clear">
+    <p>CodingHC. Copyright &copy; 2023</p>
+  </div>
+</body>
+</html>
